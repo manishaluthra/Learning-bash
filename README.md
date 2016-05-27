@@ -1,4 +1,23 @@
 # Learning-bash
+## incrementing 
+There are many ways to increment a variable in bash. Most frequently most of the times we do `i++`. But, this is incorrect. Correct interpretation is:
+
+```
+#!/bin/bash
+i=0
+...
+((i++))
+```
+
+Or, it also provides `let` command for the same. But, be careful you have to enable it first. [Here's](http://ubuntuforums.org/showthread.php?t=1377218) how you can do that. Some of the example to increment a variable using let:
+
+```
+#!/bin/bash
+...
+i=0
+let ++i
+let "i=i+1"
+```
 
 ## different usage of for loop
 ```
