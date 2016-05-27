@@ -38,7 +38,8 @@ do
 ```
 
 ## use floating point variables in bash
-example of while loop:
+Bash do not allow floating point numbers in the script, but can process *only* integers in a _plain_ manner. Though, allows its usage by `bc` command. Basically its a precision calculator language, which also provides support of standard math library.
+example of its usage in while loop:
 
 ``` 
 #!/bin/bash
@@ -55,4 +56,13 @@ same usage goes in if loop:
 ...
 if (( $(bc <<< "$arg2 <= 1") ))
 		then
+```
+##adding floating point numbers to your variables
+example:
+``` 
+#!/bin/bash
+...
+incl=0.02
+arg2=0.2
+arg2=`echo $arg2 + $incl | bc`
 ```
