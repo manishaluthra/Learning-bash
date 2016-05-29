@@ -1,4 +1,4 @@
-## wget 
+##wget 
 it is a free software package to download files using http/https or ftp. most of the times, we want to download files:
 
 ```wget $filename
