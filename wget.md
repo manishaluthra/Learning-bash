@@ -7,5 +7,5 @@ wget $filename
 
 ###download directories without index.html
 ```
- wget -r --no-parent --reject "index.html*" $url/*
+ wget -r --no-parent --reject "index.html*" $url/
 ```
