@@ -18,5 +18,9 @@ usage is simple
  #!/bin/bash
  find . -name "*.xml" -type f|xargs rm
 ``` 
+##to search and copy file to another directory
+```
+ #!/bin/bash
+find . -name "*.xml" -type f|xargs cp -t folder/
 
 
