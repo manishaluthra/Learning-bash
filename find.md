@@ -22,5 +22,12 @@ usage is simple
 ```
  #!/bin/bash
 find . -name "*.xml" -type f|xargs cp -t folder/
+```
+###send output of one process as command line arguments to another process
+```
+ #!/bin/bash
+cat `find . -name "*.xml"` >> mergeAll.xml
+```
+
 
 
